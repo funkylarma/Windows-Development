@@ -11,14 +11,13 @@ namespace Loops
 		{
 			int myVal = 15;
 
-			//Basic while loop
-			Console.WriteLine("Basic while() loop:");
-			while (myVal < 20)
+			//The do-while loop
+			Console.WriteLine("The do-while() loop:");
+			do
 			{
 				Console.WriteLine("myVal is currently {0}", myVal);
-				//careful! Always make sure that the loop has some way to exit or you'll end up with an Infinite Loop!
-				myVal +=3;
-			}
+				myVal += 3;
+			} while (myVal < 20);
 			Console.WriteLine();
 			
 			Console.ReadLine();
